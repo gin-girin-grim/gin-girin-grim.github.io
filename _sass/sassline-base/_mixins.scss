@@ -86,15 +86,15 @@ $max-widths: map-values($maxwidths);
   // If specifying a breakpoint to use (and breakpoint exists).
   @if $break-value == number and $breakpoint <= ($breakpoints-limit - 1) and $breakpoint >= 0 {
 
-    max-width: #{math.div(nth($line-widths, ($breakpoint + 1)), nth($sizes, ($breakpoint + 1)))}rem;
+    max-width: #{ nth($line-widths, ($breakpoint + 1)) / nth($sizes, ($breakpoint + 1))}rem;
 
   } @else if $breakpoint == all {
-    max-width: #{math.div(nth($line-widths, 1), nth($sizes, 1))}rem;
+    max-width: #{ nth($line-widths, 1) / nth($sizes, 1)}rem;
 
     // Loop through breakpoints.
     @for $i from 2 through $breakpoints-limit {
       @media screen and (min-width: #{ nth($points, $i) / 16 * 1em }) {
-        max-width: #{math.div(nth($line-widths, $i), nth($sizes, $i))}rem;
+        max-width: #{ nth($line-widths, $i) / nth($sizes, $i)}rem;
       }
     }
   }
