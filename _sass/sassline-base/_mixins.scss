@@ -46,12 +46,12 @@ $max-widths: map-values($maxwidths);
 
 // Root font-size in %, outputted in correct breakpoints.
 @mixin rootsize {
-  font-size: math.div(nth($sizes, 1), 16) * 100%;
+  font-size: nth($sizes, 1) / 16 * 100%;
 
   // Loop through breakpoints.
   @for $i from 2 through $breakpoints-limit {
     @media screen and (min-width: #{math.div(nth($points, $i), 16) * 1em }) {
-      font-size: math.div(nth($sizes, $i), 16) * 100%;
+      font-size: nth($sizes, $i) / 16 * 100%;
     }
   }
 }
