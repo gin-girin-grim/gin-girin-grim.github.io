@@ -292,7 +292,7 @@ a {
         $baseline-shift: #{math.div((math.div($get-size, 2) * ((2 * math.div($rootsize, $get-size)) - map-get($bodytype, cap-height))), $rootsize) + 0.00001};
         $baseline-push: #{3 - (math.div(($get-size * ((2 * math.div($rootsize, $get-size)) - map-get($bodytype, cap-height))), $rootsize) + 0.00001)};
 
-        @media screen and (min-width: math.div(nth($points, $i), 16) * 1em ) {
+        @media screen and (min-width: nth($points, $i) / 16 * 1em ) {
           margin-bottom: #{$baseline-push}rem;
           padding-bottom: #{$baseline-shift}rem;
         }
