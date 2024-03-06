@@ -111,11 +111,11 @@ $max-widths: map-values($maxwidths);
   @if $break-value == number and $breakpoint <= ($breakpoints-limit - 1) and $breakpoint > 0 {
 
     @if $gutter == small {
-      $gutter: math.div(map-get($gutterwidths, small) * 2, 1rem);
+      $gutter: map-get($gutterwidths, small) * 2 / 1rem;
     } @else if $gutter == medium {
-      $gutter: math.div(map-get($gutterwidths, medium) * 2, 1rem);
+      $gutter: map-get($gutterwidths, medium) * 2 / 1rem;
     } @else if $gutter == large {
-      $gutter: math.div(map-get($gutterwidths, large) * 2, 1rem);
+      $gutter: map-get($gutterwidths, large) * 2 / 1rem;
     } @else {
       $gutter: 0;
     }
