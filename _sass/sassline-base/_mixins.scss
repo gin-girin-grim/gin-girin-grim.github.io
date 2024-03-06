@@ -34,9 +34,9 @@ $max-widths: map-values($maxwidths);
   } @else if $value == number {
     // If using other numbers output value in ems either for min, min & max or max width breakpoints.
     $query: "all" !default;
-    @if      $break != 0 and $max != 0 { $query: "(min-width: #{ math.div($break, 16) * 1em}) and (max-width: #{math.div($max, 16) * 1em})"; }
-    @else if $break != 0 and $max == 0 { $query: "(min-width: #{math.div($break, 16) * 1em})"; }
-    @else if $break == 0 and $max != 0 { $query: "(max-width: #{math.div($max, 16) * 1em})"; }
+    @if      $break != 0 and $max != 0 { $query: "(min-width: #{$break / 16 * 1em}) and (max-width: #{math.div($max, 16) * 1em})"; }
+    @else if $break != 0 and $max == 0 { $query: "(min-width: #{$break / 16 * 1em})"; }
+    @else if $break == 0 and $max != 0 { $query: "(max-width: #{$max / 16 * 1em})"; }
     @media #{$query} { @content; }
 
   } @else {
