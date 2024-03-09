@@ -154,4 +154,4 @@ fonts:
   # preconnect_urls:
   #   - https://fonts.gstatic.com
   font_urls:
-    - 'https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2'
+    - 'https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff'
