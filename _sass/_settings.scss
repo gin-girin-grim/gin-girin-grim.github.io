@@ -5,7 +5,7 @@ $featureBackgroundColour: #f9fafa !default;
 $accentColour: #05bf85 !default;
 
 // Text colours
-$headingColour: #242e2b !default;
+$headingColour: #242E2B !default;
 $bodyColour: #384743 !default;
 $linkColour: #05bf85 !default;
 $hoverColour: #008000 !default;
@@ -15,22 +15,22 @@ $white: #ffffff !default;
 
 // Typography
 $bodytype: (
-  font-family: "Georgia, serif",
+  font-family: 'Gowun Dodum, sans-serif',
   regular: 400,
-  bold: 700,
+  bold: 1000,
   italic: italic,
   cap-height: 0.75
 ) !default;
 
 $headingtype: (
-  font-family: '"Merriweather", serif',
+  font-family: 'Gowun Dodum, sans-serif',
   regular: 400,
-  bold: 700,
+  bold: 900,
   cap-height: 0.75
 ) !default;
 
 $monospacetype: (
-  font-family: "Menlo, monospace",
+  font-family: 'Gowun Dodum, sans-serif',
   regular: 400,
   cap-height: 0.68
 ) !default;

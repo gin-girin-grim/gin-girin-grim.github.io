@@ -4,3 +4,11 @@ styles: true
 ---
 
 @import "alembic";
+
+h2.custom-header {
+    color: #0077b6; /* Change this to your desired color for the main heading */
+  }
+  
+  .custom-subheader {
+    color: #555555; /* Change this to your desired color for the subheader */
+  }
