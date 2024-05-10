@@ -154,4 +154,4 @@ fonts:
   preconnect_urls:
     - https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap
   font_urls:
-    - https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap
+    - https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Acme&family=DM+Serif+Display:ital@0;1&display=swap
