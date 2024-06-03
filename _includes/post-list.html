@@ -1,3 +1,4 @@
+<h1>{{ paginator.posts  }}</h1>
 {% if paginator.posts %}
   <section class="section  typeset">
     <ul class="list  list--posts">
@@ -5,9 +6,7 @@
         <li class="item  item--post">
           <article class="article  article--post">
 
-            <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
-            {% include post-meta.html %}
-            {{ page.excerpt | markdownify | truncatewords: 60 }}
+            <h3><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
 
           </article>
         </li>
