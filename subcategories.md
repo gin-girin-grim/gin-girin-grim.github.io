@@ -1,7 +1,6 @@
 ---
-title: Posts
-layout: categories
+layout: subcategories
 excerpt: "Category index"
-aside: true
+aside: True
 toc: true
 ---

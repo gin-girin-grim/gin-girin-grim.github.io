@@ -2,7 +2,6 @@
 title: History of the Alembic
 categories:
 - Experiments
-- Stats
 feature_text: |
   The History of the Alembic tool
 ---
