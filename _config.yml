@@ -156,6 +156,7 @@ sharing_links: # Appear at the bottom of single blog posts, add as desired. The 
 #      If multiple fonts can be requested in a single url opt for this
 fonts:
   preconnect_urls:
-    - https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap
+    - https://fonts.googleapis.com
+    - https://fonts.gstatic.com
   font_urls:
-    - https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Acme&family=DM+Serif+Display:ital@0;1&display=swap
+    - https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap
