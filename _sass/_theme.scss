@@ -2,10 +2,11 @@
 body {
   background: $backgroundColour;
   color: $bodyColour;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   @include flex-direction(column);
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .container {
@@ -52,9 +53,32 @@ body {
   background-position: center;
   .container {
     min-height: 35vh;
-    max-width: 60%;
+    max-width: min(60%, 40rem);
     @include flex-direction(column);
     @include justify-content(center);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include breakpoint(0, 640) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    .container {
+      min-height: auto;
+      max-width: 90%;
+    }
+  }
+}
+
+body.layout-home {
+  min-height: 100vh;
+  .feature {
+    flex: 0 0 auto;
+  }
+  .main {
+    width: 100%;
+    flex: 1 0 auto;
+    padding-bottom: 2rem;
   }
 }
 
