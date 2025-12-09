@@ -29,8 +29,8 @@ styles: true
 
 html, body {
   font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
-  overflow: hidden;
-  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 @import "alembic";

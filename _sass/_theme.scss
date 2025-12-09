@@ -2,10 +2,10 @@
 body {
   background: $backgroundColour;
   color: $bodyColour;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   @include flex-direction(column);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
