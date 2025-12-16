@@ -3,6 +3,7 @@ body {
   background: $backgroundColour;
   color: $bodyColour;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   @include flex-direction(column);
   overflow-x: hidden;
@@ -45,14 +46,15 @@ body {
 }
 
 .feature {
-  padding-bottom: .4rem;
+  padding-top: clamp(1rem, 3vh, 2.5rem);
+  padding-bottom: clamp(.6rem, 2.5vh, 1.8rem);
   margin-bottom: 1.6rem;
   text-align: center;
   background: $featureBackgroundColour;
   background-size: cover;
   background-position: center;
   .container {
-    min-height: 25vh;
+    min-height: clamp(12rem, 15vh, 18vh);
     max-width: min(60%, 40rem);
     @include flex-direction(column);
     @include justify-content(center);
@@ -68,6 +70,12 @@ body {
       max-width: 90%;
     }
   }
+  h5 {
+    color: $headingColour;
+    font-family: unquote(map-get($bodytype, font-family));
+    font-weight: map-get($bodytype, bold);
+    font-feature-settings: 'liga', 'kern';
+  }
 }
 
 body.layout-home,
@@ -77,12 +85,28 @@ body.layout-page.welcome {
   overflow: hidden;
   .feature {
     flex: 0 0 auto;
+    padding-top: clamp(1rem, 3vh, 2.2rem);
+    padding-bottom: clamp(1rem, 3vh, 2rem);
   }
   .main {
     flex: 1 1 auto;
-    padding-bottom: 2rem;
+    padding-top: clamp(.8rem, 2.5vh, 1.6rem);
+    padding-bottom: clamp(.8rem, 2.5vh, 1.6rem);
     min-height: 0;
     overflow-y: auto;
+  }
+  @media screen and (max-height: 1100px) {
+    .feature {
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      .container {
+        min-height: clamp(12vh, 17.5vh, 20vh);
+      }
+    }
+    .main {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 }
 
