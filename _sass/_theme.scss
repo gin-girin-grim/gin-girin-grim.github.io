@@ -70,15 +70,19 @@ body {
   }
 }
 
-body.layout-home {
+body.layout-home,
+body.layout-page.welcome {
   min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   .feature {
     flex: 0 0 auto;
   }
   .main {
-    width: 100%;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     padding-bottom: 2rem;
+    min-height: 0;
+    overflow-y: auto;
   }
 }
 
