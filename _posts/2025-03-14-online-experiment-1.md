@@ -1,5 +1,6 @@
 ---
 title: A/B 테스트, 왜 필요할까?
+description: "온라인 통제 실험(A/B 테스트)의 개념과 필요성을 이해하고, 대조군·실험군 예시로 인과효과 측정의 핵심을 소개합니다."
 categories:
 - Experiments
 ---

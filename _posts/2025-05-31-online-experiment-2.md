@@ -1,5 +1,6 @@
 ---
 title: 온라인 통제 실험 프로세스 End-to-end
+description: "실무에서 온라인 통제 실험을 준비·설계·운영·분석·배포까지 진행하는 전체 프로세스를 단계별로 정리합니다."
 categories:
 - Experiments
 ---
