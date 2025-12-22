@@ -100,7 +100,7 @@ url: "https://gin-girin-grim.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/gin-girin-grim"
 email: "gin-girin-grim@gmail.com"
-# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+# disqus: "gin-girin-grim" # Blog post comments, set to your Disqus shortname
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
 # google_analytics_anonymize_ip: ""
@@ -138,8 +138,6 @@ navigation_header:
 navigation_footer:
 - title: Home
   url: /
-- title: Search
-  url: /search/
 
 # social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
 #   Twitter: https://twitter.com/DavidDarnes

@@ -10,9 +10,7 @@ excerpt: "데이터에서 얻은 숫자와 정보로 현상의 이면을 이해�
 다양한 데이터로 현상의 이면을 이해하고, 의미 있는 인사이트를 발견하는 것에 관심이 많습니다. 누군가에게 도움이 되길 바라며, 대단하진 않지만 한 번쯤 고민할 법한 이야기를 남겨봅니다.  
 
 <h3>관심 주제</h3>
-<ul class="align-tight">
-  <li>Data-driven Strategy</li>
-  <li>Causal Inference</li>
-  <li>Online Experimentation</li>
-  <li>Product/Business Metrics Framework</li>
-</ul>
+- Data-driven Strategy
+- Causal Inference
+- Online Experimentation
+- Product/Business Metrics Framework

@@ -8,11 +8,11 @@ layout: default
 
   <article class="article  article--post  content  typeset">
 
-    <h1>{{ page.title }}</h1>
+    <h2>{{ page.title }}</h2>
     {% include post-meta.html %}
     {{ content }}
 
-    {% include nav-share.html %}
+    <!-- {% include nav-share.html %} -->
 
     {% include post-comments.html %}
 
@@ -24,8 +24,8 @@ layout: default
 
 {% include site-footer.html %}
 
-<div>
+<!-- <div>
   {% for category in page.categories %}
     <a href="{{ site.url }}/category/{{ category }}.html" >{{ category }}</a>
   {% endfor %}
-</div>
+</div> -->
