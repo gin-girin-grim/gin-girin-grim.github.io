@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gin-girin-grim.github.io/sitemap.xml
