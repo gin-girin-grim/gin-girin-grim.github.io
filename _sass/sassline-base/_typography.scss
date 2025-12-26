@@ -52,7 +52,8 @@ a {
 
   // Paragraphs. OpenType ligatures and oldstyle figures enabled if available.
   p {
-    @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2.4, $below: 2, $breakpoint: all);
+    @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2.3, $below: 2.0, $breakpoint: all);
+    font-size: 0.95em;
 
     font-feature-settings: 'kern', 'onum', 'liga';
   }
@@ -103,9 +104,15 @@ a {
     li {
       font-feature-settings: 'kern', 'onum', 'liga';
       margin-left: 2rem;
+      margin-bottom: .4rem;
+      font-size: 0.95em;
 
       @include breakpoint(break-1) {
         margin-left: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
 
       ol, ul {

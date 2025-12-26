@@ -1,4 +1,12 @@
 {% capture styles %}
   @import "alembic";
+
+  .layout-post .article--post.typeset ul,
+  .layout-post .article--post.typeset ol,
+  .layout-page.welcome .article--page.typeset ul,
+  .layout-page.welcome .article--page.typeset ol {
+    padding-left: 1.5rem;
+    margin-left: 0;
+  }
 {% endcapture %}
 <style>{{ styles | scssify | strip_newlines }}</style>
