@@ -52,7 +52,7 @@ a {
 
   // Paragraphs. OpenType ligatures and oldstyle figures enabled if available.
   p {
-    @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2.3, $below: 2.0, $breakpoint: all);
+    @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2.1, $below: 2.0, $breakpoint: all);
     font-size: 0.9em;
 
     font-feature-settings: 'kern', 'onum', 'liga';
@@ -126,7 +126,6 @@ a {
   // Ordered lists.
   ol {
     list-style-type: none;
-    counter-reset: top-level;
 
     li {
       counter-increment: top-level;
@@ -162,7 +161,6 @@ a {
       }
 
       ol {
-        counter-reset: sub-level;
 
         li {
           counter-increment: sub-level;
@@ -182,7 +180,6 @@ a {
           }
 
           ol {
-            counter-reset: sub-sub-level;
 
             li {
               counter-increment: sub-sub-level;

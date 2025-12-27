@@ -17,20 +17,34 @@
   }
 
   .typeset ol {
-    counter-reset: item;
+    counter-reset: top-level;
     list-style: none;
   }
 
+  .typeset ol li {
+    counter-increment: none;
+  }
+
   .typeset ol > li {
-    counter-increment: item;
+    counter-increment: top-level;
   }
 
   .typeset ol > li::before {
-    content: counters(item, ".") ". ";
+    content: counters(top-level, ".") ". ";
   }
 
   .typeset ol ol {
-    counter-reset: item;
+    counter-reset: sub-level;
   }
+
+  .typeset ol ol > li {
+    counter-increment: sub-level;
+    padding-left: 1rem;
+  }
+
+  .typeset ol ol > li::before {
+    content: counter(top-level) "." counter(sub-level) ". ";
+  }
+
 {% endcapture %}
 <style>{{ styles | scssify | strip_newlines }}</style>
