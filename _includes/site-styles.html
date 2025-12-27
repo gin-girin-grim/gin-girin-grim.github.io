@@ -8,5 +8,29 @@
     padding-left: 1.5rem;
     margin-left: 0;
   }
+
+  .typeset ul ul,
+  .typeset ul ol,
+  .typeset ol ul,
+  .typeset ol ol {
+    font-size: 1.0em;
+  }
+
+  .typeset ol {
+    counter-reset: item;
+    list-style: none;
+  }
+
+  .typeset ol > li {
+    counter-increment: item;
+  }
+
+  .typeset ol > li::before {
+    content: counters(item, ".") ". ";
+  }
+
+  .typeset ol ol {
+    counter-reset: item;
+  }
 {% endcapture %}
 <style>{{ styles | scssify | strip_newlines }}</style>
