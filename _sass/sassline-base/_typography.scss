@@ -62,7 +62,7 @@ a {
   h1, h2, h3, h4, h5, h6 {
     color: $headingColour;
     font-family: unquote(map-get($headingtype, font-family));
-    font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
+    font-feature-settings: 'liga', 'lnum', 'kern';
     font-style: normal;
     font-weight: map-get($headingtype, bold);
   }
@@ -367,4 +367,15 @@ a {
   .oldstyle-numerals {
     font-feature-settings: 'onum', 'kern';
   }
+}
+
+th, td {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+table thead th {
+  background-color: #f2f2f2;
+  font-weight: 600;
 }

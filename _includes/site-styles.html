@@ -21,6 +21,20 @@
     list-style: none;
   }
 
+  .typeset ol[type="a"] {
+    list-style: lower-alpha;
+    padding-left: 1.5rem;
+  }
+
+  .typeset ol[type="a"] > li {
+    counter-increment: none;
+    padding-left: 0;
+  }
+
+  .typeset ol[type="a"] > li::before {
+    content: none;
+  }
+
   .typeset ol li {
     counter-increment: none;
   }
@@ -44,6 +58,30 @@
 
   .typeset ol ol > li::before {
     content: counter(top-level) "." counter(sub-level) ". ";
+  }
+
+  .typeset ol li ul {
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .typeset table,
+  .typeset table th,
+  .typeset table td {
+    font-size: 1.0rem !important;
+  }
+
+  .no-marker {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .typeset table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
 {% endcapture %}
