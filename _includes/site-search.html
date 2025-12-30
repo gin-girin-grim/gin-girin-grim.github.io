@@ -11,7 +11,9 @@
 
 <script type="text/javascript" src="{{ "/assets/scripts/fetch.js" | relative_url }}"></script>
 <script type="text/javascript">
-  const endpoint = '{{ "/assets/search.json" | relative_url }}';
+  const endpointUrl = new URL('{{ "/assets/search.json" | relative_url }}', window.location.origin);
+  endpointUrl.searchParams.set('v', '{{ site.time | date: "%s" }}');
+  const endpoint = endpointUrl.toString();
 
   const pages = [];
 
