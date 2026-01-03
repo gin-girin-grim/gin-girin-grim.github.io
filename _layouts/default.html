@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="Qu0B5yRUdzY5qDS1EuW54jNfBy5CnsVIqOB0PHmjY0Y" />
     <meta name="naver-site-verification" content="7b6ee074c0dafda185756229af01f96f1b1a1226" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJ5P1SQ5DM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JJ5P1SQ5DM');
+    </script>
 
     {% if page.indexing == false %}
       <meta name="robots" content="noindex">
@@ -39,8 +48,6 @@
     {% endif %}
 
     {% if site.favicons or site.avatarurl %}{% include site-favicons.html %}{% endif %}
-
-    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
 
     {% include site-fonts.html %}
 
